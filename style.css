@@ -47,7 +47,7 @@ header nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    background-image: url('https://via.placeholder.com/1600x800'); /* Gambar hero */
+    background-image: url('background.jpg'); /* Gambar hero */
     background-size: cover;
     background-position: center;
     color: #fff;
