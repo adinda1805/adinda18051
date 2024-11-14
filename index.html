@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>D&M Kitchen - Restoran Makanan Lezat</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        // Fungsi untuk menampilkan detail menu saat diklik
+        function showMenuDetails(itemName) {
+            const details = {
+                'Nasi Goreng Spesial': 'Nasi Goreng Spesial dengan bahan-bahan segar dan bumbu pilihan. Cocok untuk makan siang yang mengenyangkan.',
+                'Pizza Margherita': 'Pizza Margherita dengan saus tomat segar, keju mozzarella, dan daun basil. Pizza klasik Italia yang lezat.',
+                'Spaghetti Bolognese': 'Spaghetti dengan saus daging sapi bolognese yang gurih dan pasta al dente. Hidangan Italia yang selalu disukai.'
+            };
+
+            // Menampilkan detail menu yang sesuai
+            document.getElementById('menu-details').innerText = details[itemName];
+        }
+    </script>
 </head>
 <body>
 
@@ -33,21 +46,26 @@
     <section id="menu" class="menu">
         <h2>Menu Kami</h2>
         <div class="menu-items">
-            <div class="menu-item">
+            <div class="menu-item" onclick="showMenuDetails('Nasi Goreng Spesial')">
                 <img src="nasi-goreng.jpg" alt="Nasi Goreng Spesial">
                 <h3>Nasi Goreng Spesial</h3>
                 <p>Harga: Rp 35.000</p>
             </div>
-            <div class="menu-item">
+            <div class="menu-item" onclick="showMenuDetails('Pizza Margherita')">
                 <img src="pizza-marghetita.jpg" alt="Pizza Margherita">
                 <h3>Pizza Margherita</h3>
                 <p>Harga: Rp 75.000</p>
             </div>
-            <div class="menu-item">
+            <div class="menu-item" onclick="showMenuDetails('Spaghetti Bolognese')">
                 <img src="spaghetti-bolognese.jpg" alt="Spaghetti Bolognese">
                 <h3>Spaghetti Bolognese</h3>
                 <p>Harga: Rp 50.000</p>
             </div>
+        </div>
+
+        <!-- Detail Menu -->
+        <div id="menu-details" class="menu-details">
+            <p>Silakan pilih menu untuk melihat detailnya.</p>
         </div>
     </section>
 
