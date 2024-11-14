@@ -45,9 +45,9 @@ header nav ul li a:hover {
     border-bottom: 2px solid #ff6f61;
 }
 
-/* Hero Section */
+/* Hero Section - Beranda */
 .hero {
-    background-image: url('background.webp'); /* Gambar hero */
+    background-image: url('background.webp');
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -63,7 +63,7 @@ header nav ul li a:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Transparan hitam */
+    background: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
 
@@ -98,64 +98,7 @@ header nav ul li a:hover {
     background-color: #ff5722;
 }
 
-/* Menu Section */
-.menu {
-    background-color: #fff;
-    padding: 60px 20px;
-    text-align: center;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-}
-
-.menu h2 {
-    font-size: 2.5em;
-    margin-bottom: 40px;
-    text-transform: uppercase;
-    font-weight: 600;
-}
-
-.menu-items {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 30px;
-}
-
-.menu-item {
-    background-color: #f9f9f9;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-    position: relative;
-}
-
-.menu-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
-}
-
-.menu-item img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.menu-item:hover img {
-    transform: scale(1.1);
-}
-
-.menu-item h3 {
-    font-size: 1.8em;
-    margin: 20px 0 10px;
-    font-weight: 500;
-}
-
-.menu-item p {
-    font-size: 1.2em;
-    color: #ff6f61;
-}
-
-/* About Section */
+/* About Section - Tentang Kami */
 .about {
     padding: 60px 20px;
     background-color: #f4f4f4;
@@ -177,57 +120,7 @@ header nav ul li a:hover {
     font-weight: 300;
 }
 
-/* Footer */
-footer {
-    background-color: #2d3a3f;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 60px;
-}
-
-footer p {
-    font-size: 1em;
-    letter-spacing: 1px;
-}
-
-/* Responsiveness */
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2.8em;
-    }
-
-    .hero p {
-        font-size: 1.2em;
-    }
-
-    .menu-items {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .menu-item h3 {
-        font-size: 1.6em;
-    }
-
-    .cta-btn {
-        font-size: 1em;
-        padding: 12px 25px;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero h1 {
-        font-size: 2.4em;
-    }
-
-    .hero p {
-        font-size: 1.1em;
-    }
-
-    .menu-items {
-        grid-template-columns: 1fr;
-    }
-    /* Contact Section */
+/* Contact Section - Kontak */
 .contact {
     padding: 60px 20px;
     background-color: #f4f4f4;
@@ -297,6 +190,56 @@ footer p {
 
 .submit-btn:hover {
     background-color: #ff5722;
-    }
-    
 }
+
+/* Footer */
+footer {
+    background-color: #2d3a3f;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 60px;
+}
+
+footer p {
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.8em;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+    }
+
+    .menu-items {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .menu-item h3 {
+        font-size: 1.6em;
+    }
+
+    .cta-btn {
+        font-size: 1em;
+        padding: 12px 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2.4em;
+    }
+
+    .hero p {
+        font-size: 1.1em;
+    }
+
+    .menu-items {
+        grid-template-columns: 1fr;
+    }
+    }
