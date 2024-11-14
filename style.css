@@ -63,7 +63,7 @@ header nav ul li a:hover {
     left: 0;
     right: 0;
     bottom: 0;
-  /* Transparan hitam */
+    background-color: rgba(0, 0, 0, 0.5); /* Transparan hitam */
     z-index: 1;
 }
 
