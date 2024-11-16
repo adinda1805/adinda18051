@@ -1,47 +1,76 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tentang Kami - D&M Kitchen</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Menu D&M Kitchen</title>
+    <style>
+        /* Gaya Internal */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        #menu {
+            text-align: center;
+            padding: 20px;
+        }
+        #menu h1 {
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .menu-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .menu-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            padding: 15px;
+            text-align: center;
+        }
+        .menu-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .menu-card h2 {
+            font-size: 1.5em;
+            color: #e74c3c;
+            margin: 15px 0 10px;
+        }
+        .menu-card p {
+            font-size: 1em;
+            color: #555;
+        }
+    </style>
 </head>
 <body>
-
-<header>
-    <h1>D&M Kitchen</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Beranda</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="tentang.html" class="active">Tentang Kami</a></li>
-            <li><a href="kontak.html">Kontak</a></li>
-            
-        </ul>
-    </nav>
-</header>
-<section id="menu">
-    <h1>Menu</h1>
-    <div class="menu-items">
-        <div class="menu-item">
-            <h2>Starter</h2>
-            <p>Caesar Salad - Rp25,000</p>
+    <section id="menu">
+        <h1>Menu Kami</h1>
+        <div class="menu-container">
+            <div class="menu-card">
+                <img src="nasi-goreng.jpg" alt="Nasi Goreng Spesial">
+                <h2>Nasi Goreng Spesial</h2>
+                <p>Harga: Rp 35.000</p>
+            </div>
+            <div class="menu-card">
+                <img src="pizza-margherita.jpg" alt="Pizza Margherita">
+                <h2>Pizza Margherita</h2>
+                <p>Harga: Rp 75.000</p>
+            </div>
+            <div class="menu-card">
+                <img src="spaghetti-bolognese.jpg" alt="Spaghetti Bolognese">
+                <h2>Spaghetti Bolognese</h2>
+                <p>Harga: Rp 50.000</p>
+            </div>
         </div>
-        <div class="menu-item">
-            <h2>Main Course</h2>
-            <p>Grilled Chicken - Rp45,000</p>
-            <p>Beef Steak - Rp70,000</p>
-        </div>
-        <div class="menu-item">
-            <h2>Dessert</h2>
-            <p>Chocolate Cake - Rp20,000</p>
-        </div>
-    </div>
-</section>
-
-<footer>
-    <p>&copy; 2024 D&M Kitchen. Semua hak dilindungi.</p>
-</footer>
-
+    </section>
 </body>
 </html>
