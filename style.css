@@ -1,9 +1,8 @@
- {
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -12,7 +11,6 @@ body {
     line-height: 1.6;
     letter-spacing: 0.5px;
 }
-
 
 header {
     background: #34495e;
@@ -47,7 +45,7 @@ header nav ul li a:hover {
     transform: scale(1.1);
 }
 
-
+/* Hero Section */
 .hero {
     background-image: url('hero-image.jpg');
     background-size: cover;
@@ -136,36 +134,38 @@ header nav ul li a:hover {
     padding: 80px 20px;
     background-color: #fff;
     text-align: center;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     transition: box-shadow 0.3s ease;
 }
 
 .about:hover {
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
 .about h2 {
-    font-size: 2.8em;
+    font-size: 3em;
     font-weight: 700;
-    color: #34495e;
+    color: #2c3e50;
     margin-bottom: 20px;
     text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .about p {
-    font-size: 1.2em;
+    font-size: 1.3em;
     color: #555;
     line-height: 1.8;
     margin: 0 auto;
     max-width: 800px;
+    margin-bottom: 40px;
 }
 
 .about .cta-btn {
     background-color: #ff6f61;
     color: white;
     padding: 15px 35px;
-    font-size: 1.2em;
+    font-size: 1.3em;
     border-radius: 50px;
     margin-top: 30px;
     text-decoration: none;
@@ -175,6 +175,21 @@ header nav ul li a:hover {
 .about .cta-btn:hover {
     background-color: #ff5722;
     transform: translateY(-5px);
+}
+
+
+.about .about-img {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 40px auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about .about-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -273,12 +288,20 @@ footer p {
     }
 
     .about h2 {
-        font-size: 2.4em;
+        font-size: 2.6em;
     }
 
-    .cta-btn {
+    .about p {
         font-size: 1.1em;
+    }
+
+    .about .cta-btn {
+        font-size: 1.2em;
         padding: 12px 30px;
+    }
+
+    .about .about-img {
+        max-width: 300px;
     }
 
     .contact h2 {
@@ -307,12 +330,20 @@ footer p {
     }
 
     .about h2 {
-        font-size: 2.1em;
+        font-size: 2.2em;
     }
 
-    .cta-btn {
-        padding: 12px 30px;
+    .about p {
         font-size: 1.1em;
+    }
+
+    .about .cta-btn {
+        font-size: 1.1em;
+        padding: 12px 30px;
+    }
+
+    .about .about-img {
+        max-width: 250px;
     }
 
     .contact h2 {
@@ -321,5 +352,3 @@ footer p {
 
     .contact p {
         font-size: 1.1em;
-    }
-}
